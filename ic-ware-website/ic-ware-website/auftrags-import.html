@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auftrags-Import — IC Ware</title>
+<meta name="description" content="Der Auftrags-Import von IC Ware: Bestellungen aus dem E-Mail-Postfach automatisch erkennen und als openTRANS-XML an Lexware übergeben. Läuft lokal.">
+<meta name="theme-color" content="#060708">
+<meta property="og:title" content="Auftrags-Import — IC Ware">
+<meta property="og:description" content="E-Mail-Bestellungen automatisch in die Warenwirtschaft. Aus Stunden werden Minuten.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="%23060708"/><rect x="4" y="5" width="6" height="22" rx="1" fill="%23F4F6F5"/><path d="M28 5 H14 V27 H28 V21 H20 V11 H28 Z" fill="%2319E56E"/></svg>'>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/inter-tight-latin-600-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/inter-latin-400-normal.woff2">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="island" id="island" aria-label="Hauptnavigation">
+  <a class="logo" href="index.html" aria-label="IC Ware — Startseite">
+    <svg viewBox="0 0 32 32" role="img" aria-label="IC Ware Logo">
+      <rect x="4" y="5" width="6" height="22" rx="1" fill="var(--ink)"/>
+      <path d="M28 5 H14 V27 H28 V21 H20 V11 H28 Z" fill="var(--brand)"/>
+    </svg>
+    <b>IC Ware</b>
+  </a>
+  <div class="links">
+    <a href="index.html#ablauf">Ablauf</a>
+    <a href="index.html#produkte">Produkte</a>
+    <a href="partnerprogramm.html">Partner</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </div>
+  <a class="btn btn--sm magnetic" href="index.html?typ=import#kontakt">Demo anfragen</a>
+</nav>
+
+<main class="page">
+
+<!-- ================= KOPF ================= -->
+<header class="page-hero wrap">
+  <a class="back io" href="index.html">←&nbsp;Zurück zur Übersicht</a><br>
+  <span class="tag io">Für Handel &amp; Produktion</span>
+  <h1 class="display io d1">Auftrags-Import.</h1>
+  <p class="sub io d2">Bestellungen kommen per E-Mail — und landen als geprüfte Aufträge in Ihrer Warenwirtschaft. Ohne Abtippen, ohne Zahlendreher.</p>
+  <div class="cta io d3">
+    <a class="btn magnetic" href="index.html?typ=import#kontakt">Demo anfragen</a>
+    <a class="btn btn--ghost" href="#funktionen">Funktionen ansehen</a>
+  </div>
+</header>
+
+<!-- ================= FUNKTIONEN ================= -->
+<section class="sec" id="funktionen">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow io"><span class="dot"></span>Funktionen</p>
+      <h2 class="display io d1">Vom Postfach zur Warenwirtschaft.</h2>
+      <p class="lede io d2">Der komplette Weg einer Bestellung — automatisiert, aber jederzeit unter Ihrer Kontrolle.</p>
+    </div>
+
+    <div class="grid6">
+      <div class="fcard io">
+        <span class="mark"></span>
+        <h4>Postfach-Anbindung</h4>
+        <p>Verbindet sich per IMAP mit Ihrem Bestell-Postfach und holt neue Bestellungen automatisch ab.</p>
+      </div>
+      <div class="fcard io d1">
+        <span class="mark"></span>
+        <h4>Automatische Erkennung</h4>
+        <p>Erkennt Kopfdaten, Positionen und Adressen aus den Bestellungen — angepasst auf Ihre realen Formate.</p>
+      </div>
+      <div class="fcard io d2">
+        <span class="mark"></span>
+        <h4>Prüfansicht</h4>
+        <p>Jeder Auftrag wird übersichtlich dargestellt, bevor er übergeben wird. Korrigieren, freigeben, fertig.</p>
+      </div>
+      <div class="fcard io">
+        <span class="mark"></span>
+        <h4>openTRANS-Export</h4>
+        <p>Erzeugt sauberes openTRANS-XML für die Lexware-Warenwirtschaft — per Klick, im richtigen Format.</p>
+      </div>
+      <div class="fcard io d1">
+        <span class="mark"></span>
+        <h4>Fehlertolerant</h4>
+        <p>Unklare Bestellungen landen zur Nachbearbeitung statt im Nirgendwo. Es geht nichts verloren.</p>
+      </div>
+      <div class="fcard io d2">
+        <span class="mark"></span>
+        <h4>100 % lokal</h4>
+        <p>Läuft als Desktop-Programm auf Ihrem Rechner. Keine Cloud — Bestell- und Kundendaten bleiben im Haus.</p>
+      </div>
+    </div>
+
+    <figure class="praxis io">
+      <blockquote>Aus Stunden Tipparbeit pro Tag wird ein geprüfter Import mit einem Klick.</blockquote>
+      <figcaption>Entwickelt im Kundenauftrag für einen Werbetechnik-Hersteller in NRW — dort im täglichen Einsatz.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= EINFÜHRUNG ================= -->
+<section class="sec" id="einfuehrung">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow io"><span class="dot"></span>Einführung</p>
+      <h2 class="display io d1">In drei Schritten startklar.</h2>
+    </div>
+
+    <div class="flow" id="flow">
+      <div class="beam" aria-hidden="true"><i id="beamFill"></i></div>
+      <ol class="steps">
+        <li class="step">
+          <span class="num">01</span>
+          <div>
+            <h3>Postfach &amp; Formate ansehen</h3>
+            <p>Wir schauen uns gemeinsam an, wie Ihre Bestellungen aussehen und wo sie ankommen — daraus entsteht ein konkretes Angebot mit Festpreis.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num">02</span>
+          <div>
+            <h3>Anpassung auf Ihre Bestellungen</h3>
+            <p>Die Erkennung wird auf Ihre realen Bestellformate eingestellt und mit echten Beispielen getestet — bis sie sitzt.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num">03</span>
+          <div>
+            <h3>Einrichtung &amp; Einweisung</h3>
+            <p>Installation auf Ihrem Rechner, Anbindung an Postfach und Warenwirtschaft, Einweisung Ihres Teams. Danach läuft es.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow io"><span class="dot"></span>Häufige Fragen</p>
+      <h2 class="display io d1">Kurz beantwortet.</h2>
+    </div>
+
+    <div class="faq io d1">
+      <details>
+        <summary>Funktioniert das mit unserer Warenwirtschaft?</summary>
+        <p>Im Standard exportiert der Auftrags-Import openTRANS-XML für die Lexware-Warenwirtschaft. Andere Systeme und Formate binden wir auf Anfrage an — Schnittstellen bauen ist unser Handwerk.</p>
+      </details>
+      <details>
+        <summary>Unsere Bestellungen sehen alle unterschiedlich aus. Geht das trotzdem?</summary>
+        <p>Genau dafür ist die Software gemacht. Die Erkennung wird auf Ihre tatsächlichen Bestellformate angepasst und mit echten Beispielen getestet, bevor sie in den Betrieb geht.</p>
+      </details>
+      <details>
+        <summary>Was passiert mit Bestellungen, die nicht erkannt werden?</summary>
+        <p>Sie landen sichtbar zur Nachbearbeitung — nichts wird still verworfen. Sie behalten immer die Kontrolle darüber, was in die Warenwirtschaft geht.</p>
+      </details>
+      <details>
+        <summary>Was kostet der Auftrags-Import?</summary>
+        <p>Einen Festpreis, den Sie vorab kennen — abhängig von Ihren Bestellformaten und der gewünschten Anbindung. Nach einem kurzen Blick auf Ihr Postfach bekommen Sie ein konkretes Angebot.</p>
+      </details>
+    </div>
+
+    <div class="band io">
+      <h2 class="display">Schluss mit Abtippen.</h2>
+      <p>Zeigen Sie uns zwei, drei echte Bestell-Mails — wir zeigen Ihnen, wie sie automatisch zu Aufträgen werden.</p>
+      <div class="cta">
+        <a class="btn magnetic" href="index.html?typ=import#kontakt">Demo anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="fbrand">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="4" y="5" width="6" height="22" rx="1" fill="var(--ink)"/>
+          <path d="M28 5 H14 V27 H28 V21 H20 V11 H28 Z" fill="var(--brand)"/>
+        </svg>
+        <b>IC Ware</b>
+      </span>
+      <p>Maßgeschneiderte Software und Automatisierung für Unternehmen. Handgebaut in Windeck — ohne Baukasten.</p>
+    </div>
+    <div class="fcols">
+      <div class="fcol">
+        <h5>Produkte</h5>
+        <a href="kanzlei-manager.html">Kanzlei-Manager</a>
+        <a href="auftrags-import.html">Auftrags-Import</a>
+        <a href="index.html#kontakt">Individuelle Software</a>
+      </div>
+      <div class="fcol">
+        <h5>Studio</h5>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="partnerprogramm.html">Partnerprogramm</a>
+        <a href="index.html#kontakt">Projekt starten</a>
+        <a href="mailto:kontakt@ic-ware.eu">kontakt@ic-ware.eu</a>
+      </div>
+      <div class="fcol">
+        <h5>Rechtliches</h5>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>© <span id="jahr">2026</span> IC Ware · Windeck</span>
+    <span>Keine Cookies. Kein Tracking. Läuft einfach.</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
